@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <nav class = "navbar navbar-expand-lg navbar-dark" >
+        <span class="navbar-brand">DMS<br><span class="logo2">Data Managment System</span></span>
+        <div class="form-group has-search ms-auto" style="width:50%;">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control" placeholder="Szukaj">
+        </div>
+        <button class="nav-item dropdown ms-auto" id="menu">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            <i class="fa fa-gear"></i> Ustawienia
+            </a>
+            <ul class="dropdown-menu" >
+              <li><a class="dropdown-item" href="#">Moje dane</a></li>
+              <li><a class="dropdown-item" href="/dane.html">Moje ustawienia</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Wyloguj się</a>
+              </li>
+            </ul>
+          </button>
+ 
+    </nav>
+
+  </div>
+<hr>
+  
+  <div class="row">
+    <div class="col-1">
+    <nav class ="navbar" style="width:auto;height: auto; min-width: 100px; max-width: 120px;">
+    <ul class ="nav navbar-nav">
+      <p>
+      <a class="btn" id="link" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+        Umowy
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample1">
+      <div class="card card-body">
+        <li ><a data-bs-toggle="modal" data-bs-target="#nowe" class="lista_menu" id="nowa1" name="add-order">Nowe</a></li>
+        <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">W trakcie</a></li>
+        <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Podpisane</a></li>
+        <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Zakończone</a></li>
+      </div>
+    </div>
+    <a class="btn btn-primary" id="link" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+      Faktury
+    </a>
+  </p>
+  <div class="collapse" id="collapseExample2">
+    <div class="card card-body">
+      <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Nowe</a></li>
+      <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">W trakcie</a></li>
+      <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Podpisane</a></li>
+      <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Zakończone</a></li>
+    </div>
+  </div>
+  <a class="btn btn-primary" id="link" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+    Polecenia zapłaty
+  </a>
+</p>
+<div class="collapse" id="collapseExample3">
+  <div class="card card-body">
+    <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Nowe</a></li>
+    <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">W trakcie</a></li>
+    <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Podpisane</a></li>
+    <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Zakończone</a></li>
+  </div>
+</div>
+<a class="btn btn-primary" id="link" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+  Inne
+</a>
+</p>
+<div class="collapse" id="collapseExample4">
+<div class="card card-body">
+  <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Nowe</a></li>
+  <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">W trakcie</a></li>
+  <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Podpisane</a></li>
+  <li ><a href="#" id="nowa1" class="lista_menu" data-bs-toggle="modal" data-bs-target="#work_in_progres">Zakończone</a></li>
+</div>
+</div>
+
+    </nav>
+    </div>
+    <div class="col-9">
+    <div class="row">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><span style="color: Black; font-style: bold;">Umowy</span></button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="color: Black; font-style: bold;">Faktury</button>
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style="color: Black; font-style: bold;">Polecenia zapłaty</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class ="container row">
+            <div class="stats col">
+              <div>
+              <p>Nowe</p>
+              </div>
+              <p class="cyferki">5</p>
+          </div>
+            <div class="stats col">
+              <div>
+                <p>W trakcie</p>
+                </div>
+                <p class="cyferki">7</p>
+          </div>
+            <div class="stats col">
+              <div>
+                <p>Podpisane</p>
+                </div>
+                <p class="cyferki">7</p>
+            </div>
+            <div class="stats col">
+              <div>
+                <p>Zakończone</p>
+                </div>
+                <p class="cyferki">35</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <div class ="container row">
+            <div class="stats col">
+              <div>
+                <p>Nowe</p>
+                </div>
+                <p class="cyferki">1</p>
+            </div>
+              <div class="stats col">
+                <div>
+                  <p>W trakcie</p>
+                  </div>
+                  <p class="cyferki">24</p>
+            </div>
+              <div class="stats col">
+                <div>
+                  <p>Podpisane</p>
+                  </div>
+                  <p class="cyferki">11</p>
+              </div>
+              <div class="stats col">
+                <div>
+                  <p>Zakończone</p>
+                  </div>
+                  <p class="cyferki">9</p>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <div class ="container row">
+            <div class="stats col">
+              <div>
+                <p>Nowe</p>
+                </div>
+                <p class="cyferki">2</p>
+            </div>
+              <div class="stats col">
+                <div>
+                  <p>W trakcie</p>
+                  </div>
+                  <p class="cyferki">21</p>
+            </div>
+              <div class="stats col">
+                <div>
+                  <p>Podpisane</p>
+                  </div>
+                  <p class="cyferki">3</p>
+              </div>
+              <div class="stats col">
+                <div>
+                  <p>Zakończone</p>
+                  </div>
+                  <p class="cyferki">45</p>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- Modal1 -->
+<div class="modal fade" id="nowe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h5 class="modal-title w-100" id="exampleModalLabel" >Nowa Umowa</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container=fluid">
+        <form>
+          <div class="form-check form-switch">
+              <div class="float-end">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Wysoki priorytet</label>
+                </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="form-control col">
+              <label for="obieg_informacji">Wybierz osoby w obiegu informacji</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="KZ" checked disabled>
+                <label class="form-check-label" for="KZ">Kontroler zarządzania</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="ks">
+                <label class="form-check-label" for="ks">Księgowość</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" value="" id="bd">
+                <label class="form-check-label" for="bd">Budżety</label>
+              </div>
+              <dav>
+                <input class="form-check-input" type="checkbox" value="" id="N+1">
+                <label class="form-check-label" for="N+1">Przełożony(N+1)</label>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </form>
+        <form class="was-validated" class="row g-3">
+          <div class="row">
+                <div class="col-xxl-3">
+                  <label for="numer_dostawcy">Wybierz nowy numer dostawcy</label>
+                  <select class="form-select" required>
+                    <datalist id="lista2">
+                      <option value=""></option>
+                      <option value="1">997</option>
+                      <option value="2">998</option>
+                      <option value="3">999</option>
+                    </datalist>
+                  </select>
+                  <div class="invalid-feedback" style="font-size: 7px;">Wybierz numer dostawcy</div>
+                </div>
+                
+                <div class="form-group col-xxl">
+                  <label for="nazwa_dostawcy">Nazwa Dostawcy</label>
+                  <input type="text" class="form-control" id="nazwa_dostawcy1" required>
+                  <div class="invalid-feedback" style="font-size: 7px;">Podaj nazwę dostawcy</div>
+                </div>        
+          <div class="form-group col-xxl-3">
+            <label for="typ_umowy">Typ Umowy</label>
+              <select class="form-select" required>
+                <datalist id="lista">
+                  <option value=""></option>
+                  <option value="1">Kontrakt</option>
+                  <option value="2">Umowa o dzieło</option>
+                  <option value="3">Aneks</option>
+                </datalist>
+              </select>
+              <div class="invalid-feedback" style="font-size: 7px;">Wybierz typ umowy</div>
+          </div>
+        </div>
+        </form>
+        
+            <div class="row">
+              <div class="form group col">
+                <label for="data1">Podaj datę początku umowy</label>
+                <input class="form-control" type="datetime-local" id="datetime-local1" required>
+              </div>
+              <div class="form group col">
+                <label for="data2">Podaj datę końca umowy</label>
+                <input class="form-control" type="datetime-local" id="datetime-local1">
+              </div>
+
+          </div>    
+          <div class="form-group">
+            <label for="komentarz">Dodaj komentarz</label>
+            <textarea class="form-control" id="komentarz" rows="3"></textarea>
+          </div>     
+         </section>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Załącz skan umowy</label>
+            <input class="form-control" type="file" id="formFile" required>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="work_in_progres" tabindex="-1" aria-labelledby="wiplLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title w-100" id="wipModalLabel">Work in Progress</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <img src="Ikony/work_in_progres.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Rozumiem</button>
+          <button type="button" class="btn btn-warning" data-bs-target="#nowe" data-bs-toggle="modal" data-bs-dismiss="modal">Zobacz co działa</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js" charset="utf-8" type="text/javascript"></script>
+
+
+
+
+    </body>
+    </html>
+
+
+
